@@ -1,14 +1,46 @@
-// import { fadeUp, staggerContainer } from "@/libs/animation"
-// import {motion} from "motion/react"
-// import { Button } from "./ui/button"
-// import { SparkleIcon } from "lucide-react"
+import { fadeUp, staggerContainer } from '@/libs/animation';
+import { motion } from "framer-motion";
+import { Button } from './ui/button';
+import { SparkleIcon } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <motion.section
+      initial='hidden'
+      whileInView='visible'
+      viewport={{ once: true, amount: 0.3 }}
+      variants={staggerContainer(0)}
+      className='pt-20'
+      id='hero'
+    >
+      <motion.p
+        variants={fadeUp}
+        className='flex items-center justify-center py-1 gap-2 border border-neutral-600 rounded-sm w-32 '
+      >
+        <SparkleIcon size={15} /> <span>Introduction</span>
+      </motion.p>
 
-export default Hero
+      <motion.h1
+        variants={fadeUp}
+        className='text-4xl md:text-5xl lg:text-6xl font-semibold capitalize mt-2 max-w-3xl md:leading-16'
+      >
+        I'm <span className='text-primary'>John Adedayo</span> Front-end Web
+        Developer and Graphic Designer
+      </motion.h1>
+
+      <motion.div
+        variants={fadeUp}
+        className='mt-5 flex gap-2'
+      >
+        <Button asChild>
+          <a href='#projects'>My Projects</a>
+        </Button>
+
+        <Button variant='outline'>Downnload Resume</Button>
+        htegih efhe
+      </motion.div>
+    </motion.section>
+  );
+};
+
+export default Hero;
