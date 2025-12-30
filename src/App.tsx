@@ -8,6 +8,7 @@
 import About from "./components/About"
 import Hero from "./components/Hero"
 import Projects from "./components/Projects"
+import Resume from "./components/Resume"
 import Services from "./components/Services"
 import Stats from "./components/Stats"
 
@@ -20,6 +21,7 @@ const App = () => {
       <Projects/>
       <About/>
       <Services />
+      <Resume />
     </main>
   )
 }
