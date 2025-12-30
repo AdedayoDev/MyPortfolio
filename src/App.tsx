@@ -5,8 +5,10 @@
 
 
 // import { useEffect } from "react"
+import About from "./components/About"
 import Hero from "./components/Hero"
 import Projects from "./components/Projects"
+import Services from "./components/Services"
 import Stats from "./components/Stats"
 
 
@@ -16,6 +18,8 @@ const App = () => {
       <Hero/>
       <Stats/>
       <Projects/>
+      <About/>
+      <Services />
     </main>
   )
 }

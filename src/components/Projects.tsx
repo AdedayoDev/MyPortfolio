@@ -9,7 +9,7 @@ const Projects = () => {
     <motion.section
       initial='hidden'
       whileInView='visible'
-      viewport={{ once: true, amount: 0.8 }}
+      viewport={{ once: true, amount: 0.3 }}
       variants={staggerContainer(0)}
       className='mt-30 scroll-mt-30'
       id='projects'
