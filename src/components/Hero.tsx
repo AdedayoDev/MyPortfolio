@@ -37,7 +37,7 @@ const Hero = () => {
         </Button>
 
         <Button variant='outline'>Downnload Resume</Button>
-        htegih efhe
+       
       </motion.div>
     </motion.section>
   );
