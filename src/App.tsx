@@ -10,6 +10,7 @@ import Projects from "./components/Projects"
 import Resume from "./components/Resume"
 import Services from "./components/Services"
 import Stats from "./components/Stats"
+import {Testimonials }from "./components/Testimonials"
 
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
       <About/>
       <Services />
       <Resume />
+      <Testimonials />
     </main>
   )
 }

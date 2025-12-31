@@ -11,7 +11,7 @@ const Resume = () => {
       initial='hidden'
       whileInView='visible'
       viewport={{ once: true, amount: 0.3 }}
-      variants={staggerContainer(0.5)}
+      variants={staggerContainer(0)}
       className='grid md:gird-cols-2 gap-10 mt-10'
       id='resume'
     >
