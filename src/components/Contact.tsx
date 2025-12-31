@@ -70,7 +70,7 @@ const Contact = () => {
 
             <FormField
               control={form.control}
-              name='company '
+              name="company"
               render={({ field }) => (
                 <FormItem className='w-full'>
                   <FormControl>
@@ -123,7 +123,7 @@ const Contact = () => {
 
             <FormField
               control={form.control}
-              name='message '
+              name='message'
               render={({ field }) => (
                 <FormItem className='w-full'>
                   <FormControl>
