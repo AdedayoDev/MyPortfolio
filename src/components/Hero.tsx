@@ -24,7 +24,7 @@ const Hero = () => {
         variants={fadeUp}
         className='text-4xl md:text-5xl lg:text-6xl font-semibold capitalize mt-2 max-w-3xl md:leading-16'
       >
-        I'm <span className='text-primary'>John Adedayo</span> Front-end Web
+        I'm <span className='text-primary'>John Adedayo</span> Full Stack Web
         Developer and Graphic Designer
       </motion.h1>
 

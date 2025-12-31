@@ -85,71 +85,81 @@ const socialLinks: LinksType[] = [
 
 const projectsData: ProjectType[] = [
   {
-    imgSrc: '/images/project-ph-1.jpeg',
-    title: 'Full stack music app',
-    tags: ['API', 'Development'],
-    projectLink: 'https://musify-5al0.onrender.com/',
+    imgSrc: '/grocery.PNG',
+    title: 'Fruit Grocery Store Web App',
+    tags: ['LANDING PAGE', 'Development'],
+    projectLink: 'https://fruit-grocery-store-web-app.vercel.app/',
   },
   {
-    imgSrc: '/images/project-ph-2.jpeg',
-    title: 'Full stack music app',
-    tags: ['API', 'Development'],
-    projectLink: 'https://musify-5al0.onrender.com/',
+    imgSrc: '/vectron.PNG',
+    title: 'Vechtron Tech Landing Page',
+    tags: ['SOFTWARE', 'Development'],
+    projectLink: 'https://dev.vechtron.tech/',
   },
   {
-    imgSrc: '/images/project-ph-3.jpeg',
-    title: 'Full stack music app',
-    tags: ['API', 'Development'],
-    projectLink: 'https://musify-5al0.onrender.com/',
+    imgSrc: '/elmection.PNG',
+    title: 'This is the corporate website for the Elmection Technologies',
+    tags: ['SOFTWARE', 'Development'],
+    projectLink: 'https://dev.elmection.com/',
   },
   {
-    imgSrc: '/images/project-ph-4.jpeg',
-    title: 'Full stack music app',
-    tags: ['API', 'Development'],
-    projectLink: 'https://musify-5al0.onrender.com/',
+    imgSrc: '/apaay.PNG',
+    title: 'Banking for African Businesses',
+    tags: ['LANDING PAGE', 'Development'],
+    projectLink: 'https://easybank-ten-gray.vercel.app/',
+  },
+  {
+    imgSrc: '/lcg.PNG',
+    title: 'Real Estate',
+    tags: ['LANDING PAGE', 'Development'],
+    projectLink: 'https://lcg-real-estate.vercel.app/',
   },
 ];
 
 const education: ExperienceType[] = [
   {
-    year: '2018 – 2020',
-    title: 'Bachelor of Computer Science',
-    institute: 'National University of Technology',
-    desc: 'Focused on front-end development, UI design, and web application architecture.',
+    year: '2014 – 2021',
+    title: 'Bachelor of Technology in Science Laboratory Technology',
+    institute: 'Ladoke Akintola University of Technology (LAUTECH)',
+    desc: 'Trained in analytical thinking, problem-solving, research methodology, and attention to detail.',
   },
   {
-    year: '2021 – 2022',
+    year: '2022 – 2023',
     title: 'Frontend Development Bootcamp',
-    institute: 'Udemy / Online Course',
-    desc: 'Learned modern JavaScript, React, and responsive UI patterns through real-world projects.',
+    institute: 'Techy Juant',
+    desc: 'Learned the basics of HTML, CSS, JavaScript, and modern front-end frameworks like React.js.',
   },
   {
     year: '2023',
     title: 'Advanced UI/UX Design Course',
-    institute: 'Design+Code',
+    institute: 'Cephas ICT HUB',
     desc: 'Explored advanced design systems, motion design, and accessibility best practices.',
   },
 ];
 
 const experience: ExperienceType[] = [
   {
-    year: '2021 – 2022',
-    title: 'Frontend Developer Intern',
-    institute: 'PixelForge Studio',
-    desc: 'Built and optimized responsive websites, collaborating closely with designers and backend teams.',
+    year: '2023 – 2024',
+    title: 'Independent Frontend Developer',
+    institute: 'Cephas ICT Hub',
+    desc: 'Designed and developed web interfaces for SaaS startups using React, Tailwind, and Figma.',
   },
   {
-    year: '2022 – Present',
-    title: 'UI Engineer',
-    institute: 'Freelance / Remote Work',
-    desc: 'Designed and developed web interfaces for SaaS startups using React, Tailwind, and Figma.',
+    year: '2024 – Present',
+    title: 'Frontend Developer Graduate Associate at LampnetS ',
+    institute: 'Lampnets Solutions Technology',
+    desc: 'Built and optimized responsive websites, collaborating closely with designers and backend teams.',
   },
 ];
 
 const tools: ToolsType[] = [
   {
-    label: 'Figma',
-    imgSrc: '/images/tools/figma.svg',
+    label: 'Adobe Photoshop',
+    imgSrc: '/photoshop.png',
+  },
+  {
+    label: 'Adobe Illustrator',
+    imgSrc: '/illustrator.png',
   },
   {
     label: 'CSS',
@@ -185,46 +195,46 @@ const services: ServiceType[] = [
   {
     title: 'Brand Identity',
     desc: 'I craft modern visual identities that help brands stand out through strong typography, colors, and minimal design.',
-    projects: '32 Projects',
+    projects: '10 Projects',
     icon: <Palette className='h-6 w-6 text-green-400' />,
   },
   {
-    title: 'UI/UX Design',
-    desc: 'Designing clean, intuitive, and user-friendly interfaces that improve user experience and boost conversions.',
-    projects: '47 Projects',
+    title: 'Graphic and Design',
+    desc: 'Designing clean, intuitive, eye-catchy piece of graphics, in Flyers, Banners, Posters and Social Media posts.',
+    projects: '50 Projects',
     icon: <Layers className='h-6 w-6 text-green-400' />,
   },
   {
     title: 'Web Development',
     desc: 'Building high-performance, SEO-friendly websites using Next.js, Tailwind, and modern web technologies.',
-    projects: '58 Projects',
+    projects: '10 Projects',
     icon: <Globe className='h-6 w-6 text-green-400' />,
   },
   {
     title: 'Mobile App Design',
     desc: 'Creating pixel-perfect app interfaces optimized for both iOS and Android devices with smooth usability.',
-    projects: '21 Projects',
+    projects: '3 Projects',
     icon: <Smartphone className='h-6 w-6 text-green-400' />,
   },
   {
     title: 'Product Launch Strategy',
     desc: 'Helping startups prepare their digital products for launch with design systems, marketing pages, and assets.',
-    projects: '15 Projects',
+    projects: '1 Projects',
     icon: <Rocket className='h-6 w-6 text-green-400' />,
   },
 ];
 
 const statsData: StatsType[] = [
   {
-    number: '30+',
+    number: '15+',
     label: 'Happy Clients',
   },
   {
-    number: '05+',
+    number: '03+',
     label: 'Years Of Experience',
   },
   {
-    number: '50+',
+    number: '20+',
     label: 'Projects Done',
   },
 ];
