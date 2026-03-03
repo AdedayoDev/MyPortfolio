@@ -53,6 +53,7 @@ export const Testimonials = () => {
               src={testimonials[currentSlide].image}
               alt={testimonials[currentSlide].name}
               className='size-20 rounded-full object-cover'
+              loading='lazy'
             />
 
             <div className='flex-1 space-y-4 '>

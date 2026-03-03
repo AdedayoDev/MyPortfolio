@@ -14,6 +14,7 @@ const Profile = () => {
           src='/avatarjpg.png'
           alt='John '
           className='lg:w-96 rounded-2xl object-cover'
+          loading='lazy'
         />
 
         <div className='mt-6'>
@@ -26,24 +27,31 @@ const Profile = () => {
         <div className='mt-6'>
           <p className='text-sm text-neutral-300 '>Based in:</p>
 
-          <p className='text-lg capitalize'>
-            Based in Lagos, NG
-          </p>
+          <p className='text-lg capitalize'>Based in Lagos, NG</p>
         </div>
 
         <div className='flex gap-3 pt-2 text-neutral-500'>
-            {socialLinks.map((social, i) => {
-                const Icon = social.icon;
+          {socialLinks.map((social, i) => {
+            const Icon = social.icon;
 
-                return (
-                    <a key={i} href={social.link} className='hover:text-primary border-2 border-neutral-500 p-2 rounded-full hover:border-primary transition duration-200 '>
-                        <Icon className="size-6"/>
-                    </a>
-                )
-            })}
+            return (
+              <a
+                key={i}
+                href={social.link}
+                className='hover:text-primary border-2 border-neutral-500 p-2 rounded-full hover:border-primary transition duration-200 '
+              >
+                <Icon className='size-6' />
+              </a>
+            );
+          })}
         </div>
 
-        <Button className='mt-2 bg-white text-black' size="lg">Let's Work</Button>
+        <Button
+          className='mt-2 bg-white text-black'
+          size='lg'
+        >
+          Let's Work
+        </Button>
       </div>
     </aside>
   );

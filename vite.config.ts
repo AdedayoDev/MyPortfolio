@@ -11,4 +11,21 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        drop_console: true,
+      },
+    },
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'vendor': ['react', 'react-dom', 'framer-motion'],
+          'ui': ['lucide-react', '@radix-ui/react-dialog', '@radix-ui/react-label'],
+        },
+      },
+    },
+    chunkSizeWarningLimit: 1000,
+  },
 })

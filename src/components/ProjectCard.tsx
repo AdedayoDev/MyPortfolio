@@ -2,7 +2,6 @@ import { motion } from 'framer-motion';
 import { fadeUp } from '@/libs/animation';
 import type { ProjectType } from '@/types';
 
-
 export const ProjectCard = ({
   imgSrc,
   title,
@@ -20,6 +19,7 @@ export const ProjectCard = ({
             src={imgSrc}
             alt={title}
             className='rounded-md transition duration-500 hover:scale-115 w-full '
+            loading='lazy'
           />
         </figure>
 

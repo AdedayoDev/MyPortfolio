@@ -12,12 +12,12 @@ const Resume = () => {
       whileInView='visible'
       viewport={{ once: true, amount: 0.3 }}
       variants={staggerContainer(0)}
-      className='grid md:gird-cols-2 gap-10 mt-10'
+      className='flex flex-col gap-10 mt-10'
       id='resume'
     >
       <SectionHeader
         subtitle='Resume'
-        title='Education adn Practical Experience'
+        title='Education and Practical Experience'
       />
       <motion.p
         variants={fadeUp}
@@ -37,13 +37,13 @@ const Resume = () => {
         industry best practices.
       </motion.p>
 
-      <div className='grid gap-x-10 my-16 md:grid-cols-2 '>
+      <div className='grid grid-cols-1 gap-x-10 my-16 md:grid-cols-2 '>
         <motion.div
           variants={fadeUp}
           className='mb-16 md:mb-0'
         >
           <h2 className='text-3xl font-semibold mb-8'>Education</h2>
-           <div className='space-y-8 border-l border-neutral-700 pl-6'>
+          <div className='space-y-8 border-l border-neutral-700 pl-6'>
             {education.map((item, index) => (
               <ExpCard
                 item={item}
@@ -53,14 +53,13 @@ const Resume = () => {
           </div>
         </motion.div>
 
-
         <motion.div
           variants={fadeUp}
           className='mb-16 md:mb-0'
         >
           <h2 className='text-3xl font-semibold mb-8'>Work Experience</h2>
-           <div className='space-y-8 border-l  pl-6'>
-            {experience .map((item, index) => (
+          <div className='space-y-8 border-l  pl-6'>
+            {experience.map((item, index) => (
               <ExpCard
                 item={item}
                 key={index}
@@ -69,18 +68,29 @@ const Resume = () => {
           </div>
         </motion.div>
 
+        <div className='my-16 col-span-full'>
+          <motion.h2
+            variants={fadeUp}
+            className='text-3xl font-semibold mb-8 capitalize'
+          >
+            {' '}
+            My Favourite tools{' '}
+          </motion.h2>
 
-        <div className='my-16'> 
-            <motion.h2 variants={fadeUp} className='text-3xl font-semibold mb-8 capitalize'> My Favourite tools </motion.h2>
-
-            <motion.div initial='hidden'
-              whileInView='visible'
-              viewport={{ once: true, amount: 0.3 }}
-              variants={staggerContainer(0.5)} className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5  gap-5'>
-                {tools.map((tool, index) => (
-                    <ToolsCard tool={tool} key={index} />
-                ))}
-            </motion.div>
+          <motion.div
+            initial='hidden'
+            whileInView='visible'
+            viewport={{ once: true, amount: 0.3 }}
+            variants={staggerContainer(0.5)}
+            className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5  gap-5'
+          >
+            {tools.map((tool, index) => (
+              <ToolsCard
+                tool={tool}
+                key={index}
+              />
+            ))}
+          </motion.div>
         </div>
       </div>
     </motion.section>
