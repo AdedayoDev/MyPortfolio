@@ -7,7 +7,7 @@ const Profile = () => {
       <div className='flex flex-col gap-4'>
         <div className='flex items-center justify-between gap-x-10'>
           <h1 className='text-3xl font-bold'>John</h1>
-          <p className='text-sm'>Frontend Designer & Developer</p>
+          <p className='text-sm'>Fullstack Engineer & Graphic Designer</p>
         </div>
 
         <img
@@ -21,7 +21,7 @@ const Profile = () => {
           <p className='text-sm text-neutral-300 '>Specialization:</p>
 
           <p className='text-lg capitalize'>
-            Frontend Developer and Graphic designer
+            Fullstack Engineer and Graphic designer
           </p>
         </div>
         <div className='mt-6'>
