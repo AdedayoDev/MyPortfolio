@@ -159,7 +159,7 @@ const tools: ToolsType[] = [
   },
   {
     label: 'Adobe Illustrator',
-    imgSrc: '/illustrator.png',
+    imgSrc: '/llustrator.png',
   },
   {
     label: 'CSS',
