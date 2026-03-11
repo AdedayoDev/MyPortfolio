@@ -37,7 +37,7 @@ const Projects = () => {
         viewport={{ once: true, amount: 0.3 }}
         variants={staggerContainer(0.2)}
       >
-        {projectsData.slice(0, 4).map((project, i) => (
+        {projectsData.slice(0, 6).map((project, i) => (
           <motion.div
             key={i}
             variants={fadeUp}
