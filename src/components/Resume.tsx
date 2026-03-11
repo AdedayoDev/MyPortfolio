@@ -3,7 +3,7 @@ import { fadeUp, staggerContainer } from '@/libs/animation';
 import { SectionHeader } from './SectionHeader';
 import { education, experience, tools } from '@/constants';
 import { ExpCard } from './ExpCard';
-import { ToolsCard } from './ToolsCard';
+import { ToolsCarousel } from './ToolsCarousel';
 
 const Resume = () => {
   return (
@@ -27,7 +27,7 @@ const Resume = () => {
           where I earned a degree in Science Laboratory Technology
           (Chemistry/Biochemistry). My academic training developed a strong
           foundation in analytical thinking, problem-solving, research
-          methodology, and attention to detail—skills that translate effectively
+          methodology, and attention to detail skills that translate effectively
           into software development and engineering practices. To further pursue
           my passion for technology, I completed intensive training at Cephas
           ICT Hub, where I specialized in web development. During this program,
@@ -49,6 +49,7 @@ const Resume = () => {
               {education.map((item, index) => (
                 <ExpCard
                   item={item}
+                  index={index}
                   key={index}
                 />
               ))}
@@ -64,6 +65,7 @@ const Resume = () => {
               {experience.map((item, index) => (
                 <ExpCard
                   item={item}
+                  index={index}
                   key={index}
                 />
               ))}
@@ -71,28 +73,10 @@ const Resume = () => {
           </motion.div>
 
           <div className='my-16 col-span-full'>
-            <motion.h2
-              variants={fadeUp}
-              className='text-3xl font-semibold mb-8 capitalize'
-            >
-              {' '}
-              My Favourite tools{' '}
-            </motion.h2>
-
-            <motion.div
-              initial='hidden'
-              whileInView='visible'
-              viewport={{ once: true, amount: 0.3 }}
-              variants={staggerContainer(0.5)}
-              className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5  gap-5'
-            >
-              {tools.map((tool, index) => (
-                <ToolsCard
-                  tool={tool}
-                  key={index}
-                />
-              ))}
-            </motion.div>
+            <ToolsCarousel
+              tools={tools}
+              title='My Favorite Tools'
+            />
           </div>
         </motion.div>
       </motion.div>

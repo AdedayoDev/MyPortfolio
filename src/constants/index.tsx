@@ -114,6 +114,12 @@ const projectsData: ProjectType[] = [
     tags: ['LANDING PAGE', 'Development'],
     projectLink: 'https://lcg-real-estate.vercel.app/',
   },
+  {
+    imgSrc: '/vendorFlow.PNG',
+    title: 'VendorFlow Analytics',
+    tags: ['SOFTWARE ', 'Development'],
+    projectLink: 'https://venderflow-analytics.vercel.app/',
+  },
 ];
 
 const education: ExperienceType[] = [
@@ -226,7 +232,7 @@ const services: ServiceType[] = [
 
 const statsData: StatsType[] = [
   {
-    number: '15+',
+    number: '07+',
     label: 'Happy Clients',
   },
   {
